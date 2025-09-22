@@ -82,8 +82,12 @@ const App = () => {
       </div>
       <Home />
 
-      <div className='m-6'>
-          <Button label="Show Alert" className="bg-lime-500 text-white rounded-xl px-10 text-sm cursor-pointer" onClick={()=>alert('Hi !')}/>
+      <hr className='mt-3'/>
+
+      <div className='m-6 space-x-6'>
+        <h2 className='my-6'>These both buttons reuseable</h2>
+        <Button label="Show Alert" className="bg-lime-500 text-white rounded-xl px-10 text-sm cursor-pointer" onClick={() => alert('Hi !')} />
+        <Button label="Prompt" className="bg-red-500 text-white rounded-full px-10 text-sm cursor-pointer" onClick={() => prompt()} />
       </div>
     </div>
   )
