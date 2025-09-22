@@ -1,5 +1,6 @@
 import React from 'react'
 import Home from './components/Home'
+import Button from './reuseble/Buttton';
 
 
 const App = () => {
@@ -80,6 +81,10 @@ const App = () => {
 
       </div>
       <Home />
+
+      <div className='m-6'>
+          <Button label="Show Alert" className="bg-lime-500 text-white rounded-xl px-10 text-sm cursor-pointer" onClick={()=>alert('Hi !')}/>
+      </div>
     </div>
   )
 }
